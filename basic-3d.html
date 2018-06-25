@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <style>
+      body {
+          text-align: center; margin: 5em 0 0 0; vertical-align: middle; font-family: "Verdana";
+      }
+      canvas { width: 100%; height: 100% }
+      .center { margin: auto; width: 600px; text-align: left; }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h1><a href="https://en.wikipedia.org/wiki/WebGL">3D Cube</a></h1>
+      <ul>
+	<li>Use &larr; &rarr; &uarr; &darr; keys to navigate</li>
+	<li>Use <code>Shift + &larr;, Shift + &rarr;, Shift + &uarr;, Shift + &darr;</code> to rotate camera</li>
+	<li>Use <code>Alt + &uarr;, Alt + &darr;</code> to increase / decrease height</li>
+      </ul>
+    </div>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/92/three.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Offline fallback for dev -->
+  <script type="text/javascript">
+    window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js">\x3C/script>')
+    window.THREE || document.write('<script src="js/three.js">\x3C/script>')
+  </script>
+
+  <script src="js/basic-3d.js"></script>
+
+</html>
